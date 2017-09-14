@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // globals
-var port = process.env.PORT || 3001;
+var port = process.env.PORT || 4001;
 
 // spin up server
 app.listen(port, function() {
