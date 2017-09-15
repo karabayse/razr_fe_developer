@@ -4,7 +4,25 @@ body {
 
 h1 {
   text-align: center;
+  color: DarkKhaki;
 }
+
+h2 {
+  text-align: center;
+  color: MistyRose;
+}
+
+h3 {
+  text-align: center;
+  color: DarkSlateGrey;
+}
+
+h4 {
+  text-align: center;
+  color: DarkGoldenRod;
+}
+
+
 
 
 /*squares should have a red background*/
