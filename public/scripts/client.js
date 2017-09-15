@@ -10,6 +10,10 @@ myApp.controller('ShapeController', function(ShapeService) {
 
 // shape function
 vm.shape = function() {
+  // circle object --> getArea method returns area of the circle
+  // circle object --> toString method returns:  Circle: Radius = X, Area = Y  (where X and Y are the radius and area of the circle)
+  // square object --> getArea method returns area of the square
+  // square object --> toString method returns:  Square:  Size = X, Area = Y  (where X and Y are the length and area of the square)
   var shapeObject = {
     radius: vm.radiusInput,
     area: vm.areaInput,
