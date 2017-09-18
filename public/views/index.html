@@ -25,17 +25,27 @@
     <div class="container" class="form-group" ng-init="sc.sort(); sc.generate()">
 
       <span><h2>CIRCLES & <b>Squares</b></h2></span>
-      <form>
-        <input type="number" class="input" id="radius" placeholder="radius" ng-model="sc.radiusInput">
-        <br>
-        <input type="number" class="input" id="area" placeholder="area" ng-model="sc.areaInput">
-        <br>
-        <input type="number" class="input" id="length" placeholder="length" ng-model="sc.lengthInput">
-        <br>
-      </form>
 
-      <button class="btn-default" ng-click="sc.shape()">Generate Shape</button>
-      <!-- <button class="btn btn-block btn-md" ng-click="sc.getSquare()">Square</button> -->
+      <div class="row">
+        <div class="col-sm-2">
+
+          <div class="circle">
+          <input type="number" class="input" id="radius" placeholder="radius" ng-model="sc.radiusInput">
+          <br>
+          <input type="number" class="input" id="area" placeholder="area" ng-model="sc.areaInput">
+          <br>
+          <button class="btn-default" ng-click="sc.circleObject.getArea()">Generate Circle</button>
+          <br>
+          </div>
+
+          <div class="square">
+          <input type="number" class="input" id="length" placeholder="length" ng-model="sc.lengthInput">
+          <br>
+          <button class="btn-default" ng-click="sc.squareObject.getArea()">Generate Square</button>
+          </div>
+
+        </div>
+      </div>
 
     </div>
 

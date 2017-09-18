@@ -17,14 +17,22 @@ body {
 }
 
 
+/*circles should have a blue background */
+#circle {
+  background-color: #0000FF;
+}
+
+.circle {
+  float: left;
+}
+
 /*squares should have a red background*/
 #square {
   background-color: #FF0000;
 }
 
-/*circles should have a blue background */
-#circle {
-  background-color: #0000FF;
+.square {
+  float: right;
 }
 
 /*each time the page is loaded, a new set of shapes should be generated*/
