@@ -30,20 +30,33 @@
         <div class="col-sm-2">
 
           <div class="circle">
-          <input type="number" class="input" id="radius" placeholder="radius" ng-model="sc.radiusInput">
-          <br>
-          <input type="number" class="input" id="area" placeholder="area" ng-model="sc.areaInput">
-          <br>
-          <button class="btn-default" ng-click="sc.circleObject.getArea()">Generate Circle</button>
-          <br>
+            <input type="number" class="input" id="radius" placeholder="radius" ng-model="sc.radiusInput">
+            <br>
+            <input type="number" class="input" id="area" placeholder="area" ng-model="sc.areaInput">
+            <br>
+            <button class="btn-default" ng-click="sc.circleObject.getArea()">Generate Circle</button>
+            <br>
           </div>
 
           <div class="square">
-          <input type="number" class="input" id="length" placeholder="length" ng-model="sc.lengthInput">
-          <br>
-          <button class="btn-default" ng-click="sc.squareObject.getArea()">Generate Square</button>
+            <input type="number" class="input" id="length" placeholder="length" ng-model="sc.lengthInput">
+            <br>
+            <button class="btn-default" ng-click="sc.squareObject.getArea()">Generate Square</button>
+            <br>
           </div>
 
+        </div>
+      </div>
+
+      <div ng-init="sc.sort()">
+        <div ng-repeat="data in sc.circlesAndSquares">
+          {{ data. }}
+        </div>
+      </div>
+
+      <div ng-init="sc.generate()">
+        <div ng-repeat="data in sc.squares">
+          {{ data. }}
         </div>
       </div>
 

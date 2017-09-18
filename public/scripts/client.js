@@ -63,7 +63,7 @@ console.log(mySquare);
 vm.circlesAndSquaresArray = [];
 
 function sort() {
-
+  vm.circlesAndSquares = ShapeService.data;
 } // end sort function
 vm.circlesAndSquaresArray.sort();
 vm.circlesAndSquaresArray.reverse();
@@ -78,7 +78,7 @@ vm.circlesAndSquaresArray.reverse();
 vm.fiftySquaresArray = [];
 
 function generate() {
-
+  vm.squares = ShapeService.data;
 } // end generate function
 
 }); // end controller
