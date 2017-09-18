@@ -1,15 +1,27 @@
 h1 {
+  margin-left: 100px;
+}
+
+/*.logo {
+  float: right;
+  height: 100px;
+  width: 20%;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}*/
+
+h2 {
   text-align: center;
-  color: Red;
 }
 
 span {
   font-size: 4em;
+  color: #0000FF;
 }
 
 span b {
     font-family: cursive;
-    color: #FF8C00;
+    color: #FF0000;
 }
 
 body {

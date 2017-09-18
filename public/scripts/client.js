@@ -13,9 +13,9 @@ myApp.controller('ShapeController', function(ShapeService) {
 // circle object
 // instances can be created with any desired radius
 // instances have a 'getArea' method that returns the area of the circle
-function circleObject(radius, area) {
-  vm.radius = radius;
-  vm.area = area;
+function circleObject(X, Y) {
+  vm.radius = X;
+  vm.area = Y;
 } // end circleObject
 
 var circle = new circleObject(4, 2);
@@ -63,10 +63,10 @@ console.log(mySquare);
 vm.circlesAndSquaresArray = [];
 
 function sort() {
+  vm.circlesAndSquaresArray.sort();
+  vm.circlesAndSquaresArray.reverse();
   vm.circlesAndSquares = ShapeService.data;
 } // end sort function
-vm.circlesAndSquaresArray.sort();
-vm.circlesAndSquaresArray.reverse();
 
 
 
@@ -78,6 +78,7 @@ vm.circlesAndSquaresArray.reverse();
 vm.fiftySquaresArray = [];
 
 function generate() {
+
   vm.squares = ShapeService.data;
 } // end generate function
 
