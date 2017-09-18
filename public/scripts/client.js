@@ -13,15 +13,16 @@ myApp.controller('ShapeController', function(ShapeService) {
 // toString method returns:  Circle: Radius = X, Area = Y  (where X and Y are
 // the radius and area of the circle)
 function circleObject(radius, area) {
-  this.radius = radius;
-  this.area = area;
-  this.getArea = calculateArea;
+  vm.radius = radius;
+  vm.area = area;
+  vm.getArea = calculateArea;
 } // end circleObject
 
 
-var circle = new circleObject(X, Y);
+var circle = new circleObject(4, 2);
 
 function calculateArea() {
+  // A = πr2
   var circleArea = 65 - this.area;
   return circleArea;
 }
@@ -34,8 +35,8 @@ function calculateArea() {
 // toString method returns:  Square:  Size = X, Area = Y  (where X and Y are the
 // length and area of the square)
 function squareObject(size, area) {
-  this.size = size;
-  this.area = area;
+  vm.size = size;
+  vm.area = area;
 } // end square object
 
 
