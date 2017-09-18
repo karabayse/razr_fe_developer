@@ -1,15 +1,30 @@
-/*squares should have a red background*/
-
-/*circles should have a blue background */
-
-/*each time the page is loaded, a new set of shapes should be generated*/
-
-
 h1 {
   text-align: center;
   color: Red;
 }
 
-body {
-  background-color: LightGrey;
+span {
+  font-size: 4em;
 }
+
+span b {
+    font-family: cursive;
+    color: #FF8C00;
+}
+
+body {
+  background-color: #D3D3D3;
+}
+
+
+/*squares should have a red background*/
+#square {
+  background-color: #FF0000;
+}
+
+/*circles should have a blue background */
+#circle {
+  background-color: #0000FF;
+}
+
+/*each time the page is loaded, a new set of shapes should be generated*/

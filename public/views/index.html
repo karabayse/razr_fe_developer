@@ -24,6 +24,7 @@
 
     <div class="container" class="form-group" ng-init="sc.sort(); sc.generate()">
 
+      <span><h2>CIRCLES & <b>Squares</b></h2></span>
       <form>
         <input type="number" class="input" id="radius" placeholder="radius" ng-model="sc.radiusInput">
         <br>
@@ -33,7 +34,7 @@
         <br>
       </form>
 
-      <button class="btn btn-block btn-md" ng-click="sc.shape()">Generate Shape</button>
+      <button class="btn-default" ng-click="sc.shape()">Generate Shape</button>
       <!-- <button class="btn btn-block btn-md" ng-click="sc.getSquare()">Square</button> -->
 
     </div>
