@@ -1,32 +1,15 @@
-body {
-  background-color: LightBlue;
-}
-
-h1 {
-  text-align: center;
-  color: DarkKhaki;
-}
-
-h2 {
-  text-align: center;
-  color: MistyRose;
-}
-
-h3 {
-  text-align: center;
-  color: DarkSlateGrey;
-}
-
-h4 {
-  text-align: center;
-  color: DarkGoldenRod;
-}
-
-
-
-
 /*squares should have a red background*/
 
 /*circles should have a blue background */
 
 /*each time the page is loaded, a new set of shapes should be generated*/
+
+
+h1 {
+  text-align: center;
+  color: Red;
+}
+
+body {
+  background-color: LightGrey;
+}

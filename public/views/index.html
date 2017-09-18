@@ -14,16 +14,15 @@
 
 <body ng-app="myApp">
 
-  <h1>Circles & Squares</h1>
-  <h2>Circles & Squares</h2>
-  <h3>Circles & Squares</h3>
-  <h4>Circles & Squares</h4>
+  <nav class="navbar navbar-default">
+    <h1>RAZR FE Developer Coding Test</h1>
+  </nav>
 
   <main ng-view></main>
 
   <div ng-controller="ShapeController as sc">
 
-    <div class="container" class="form-group">
+    <div class="container" class="form-group" ng-init="sc.sort(); sc.generate()">
 
       <form>
         <input type="number" class="input" id="radius" placeholder="radius" ng-model="sc.radiusInput">

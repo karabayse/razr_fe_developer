@@ -15,7 +15,6 @@ myApp.controller('ShapeController', function(ShapeService) {
 function circleObject(radius, area) {
   vm.radius = radius;
   vm.area = area;
-  vm.getArea = calculateArea;
 } // end circleObject
 
 
@@ -58,10 +57,12 @@ vm.shape = function() {
 // array sorted by area, in descending order
 vm.circlesAndSquaresArray = [];
 
-vm.sort = function() {
+// vm.sort = function() {
+function sort() {
 
-}; // end sort function
-
+} // end sort function
+myarray.sort();
+myarray.reverse();
 
 // generate function
 // Create a method that generates an array of 50 squares of varying side length
@@ -69,8 +70,9 @@ vm.sort = function() {
 // The sizes of each shape should be randomly generated.
 vm.fiftySquaresArray = [];
 
-vm.generate = function() {
+// vm.generate = function() {
+function generate() {
 
-}; // end generate function
+} // end generate function
 
 }); // end controller
